@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Navegable</title>
+    
+       
+
+</head>
+<body>
+
+    <button id="toggleMenu">Mostrar/Ocultar Menú</button>
+    <div id="menu">
+        <ul>
+            <li><a href="#">Hidtoria gastronomica</a></li>
+            <li><a href="#">Comida tipica bebidas dulces</a></li>
+            <li><a href="#"> Chefs</a></li>
+            <li><a href="#">Mejores restaurantes</a></li>
+            <li><a href="#"> Glosario culinario</a></li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById("toggleMenu").addEventListener("click", function() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "none" || menu.style.display === "") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>
